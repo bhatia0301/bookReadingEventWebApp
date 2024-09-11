@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CustomExceptions/1.0.0": {
+        "dependencies": {
+          "BookReadingApp.Core": "1.0.0"
+        },
+        "runtime": {
+          "CustomExceptions.dll": {}
+        }
+      },
+      "BookReadingApp.Core/1.0.0": {
+        "runtime": {
+          "BookReadingApp.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CustomExceptions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookReadingApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

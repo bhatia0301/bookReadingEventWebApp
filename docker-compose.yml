@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  bookreadingapp.web:
+    image: bhatia0301/bookreadingevents
+    build:
+      context: .
+      dockerfile: BookReadingWebApp/Dockerfile
+    depends_on:
+      - sqlserver
+    environment:
+      ConnectionStrings__DefaultConnection: Server=sqlserver,1433;Database=BookReadingEventsDB;User Id=SA;Password=Naman@123;Encrypt=False
+      ASPNETCORE_ENVIRONMENT: Development
+    ports:
+    - 5000:80
+
+     
+  sqlserver:
+    container_name: sqlservercontainer
+    image: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
+    environment: 
+      ACCEPT_EULA: Y 
+      SA_PASSWORD: Naman@123 
+      MSSQL_PID: Express
+    ports:
+      - 1433:1433
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+
+
+volumes:
+  sqlserver_data: 

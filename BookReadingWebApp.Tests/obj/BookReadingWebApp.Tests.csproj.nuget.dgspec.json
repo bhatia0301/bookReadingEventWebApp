@@ -1,0 +1,486 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp.Tests\\BookReadingWebApp.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj",
+        "projectName": "BookReadingApp.Application",
+        "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj",
+        "packagesPath": "C:\\Users\\namanbhatia01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\namanbhatia01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj",
+        "projectName": "BookReadingApp.Core",
+        "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj",
+        "packagesPath": "C:\\Users\\namanbhatia01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\namanbhatia01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Infrastructure\\BookReadingApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Infrastructure\\BookReadingApp.Infrastructure.csproj",
+        "projectName": "BookReadingApp.Infrastructure",
+        "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Infrastructure\\BookReadingApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\namanbhatia01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\namanbhatia01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp.Tests\\BookReadingWebApp.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp.Tests\\BookReadingWebApp.Tests.csproj",
+        "projectName": "BookReadingWebApp.Tests",
+        "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp.Tests\\BookReadingWebApp.Tests.csproj",
+        "packagesPath": "C:\\Users\\namanbhatia01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\namanbhatia01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj"
+              },
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj"
+              },
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Infrastructure\\BookReadingApp.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Infrastructure\\BookReadingApp.Infrastructure.csproj"
+              },
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp\\BookReadingApp.Web.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp\\BookReadingApp.Web.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FakeItEasy": {
+              "target": "Package",
+              "version": "[5.5.0, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.AspNetCore.Mvc.ViewFeatures": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp\\BookReadingApp.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp\\BookReadingApp.Web.csproj",
+        "projectName": "BookReadingApp.Web",
+        "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp\\BookReadingApp.Web.csproj",
+        "packagesPath": "C:\\Users\\namanbhatia01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingWebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\namanbhatia01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj"
+              },
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Infrastructure\\BookReadingApp.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Infrastructure\\BookReadingApp.Infrastructure.csproj"
+              },
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\FacadePattern\\FacadePattern.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\FacadePattern\\FacadePattern.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\FacadePattern\\FacadePattern.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\FacadePattern\\FacadePattern.csproj",
+        "projectName": "FacadePattern",
+        "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\FacadePattern\\FacadePattern.csproj",
+        "packagesPath": "C:\\Users\\namanbhatia01\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\FacadePattern\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\namanbhatia01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Application\\BookReadingApp.Application.csproj"
+              },
+              "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj": {
+                "projectPath": "C:\\Users\\namanbhatia01\\source\\BookReadingWebApp\\BookReadingApp.Core\\BookReadingApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

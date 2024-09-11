@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>3d1ac0f3-1b75-4da2-aeb2-7d131260d124</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.1.39" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.33" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.33">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookReadingApp.Application\BookReadingApp.Application.csproj" />
+    <ProjectReference Include="..\BookReadingApp.Infrastructure\BookReadingApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\FacadePattern\FacadePattern.csproj" />
+  </ItemGroup>
+
+</Project>
