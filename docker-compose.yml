@@ -13,10 +13,10 @@ services:
       ASPNETCORE_ENVIRONMENT: Development
     ports:
     - 5000:80
+    container_name: bookreadingevents_webapp
 
      
   sqlserver:
-    container_name: sqlservercontainer
     image: mcr.microsoft.com/mssql/server:2022-preview-ubuntu-22.04
     environment: 
       ACCEPT_EULA: Y 
@@ -24,6 +24,7 @@ services:
       MSSQL_PID: Express
     ports:
       - 1433:1433
+    container_name: sqlserver_container
     volumes:
       - sqlserver_data:/var/opt/mssql
 
