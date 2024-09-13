@@ -35,7 +35,7 @@ If you want to run with docker commands only: -
 
 
 
-4.	Create the container for the image bookevents or bhatia0301/bookreadingevents
+4.	Create the container for the image bookevents or bhatia0301/bookreadingevents: -
                   docker run --rm -p 5000:80 --name bookreadingevent --network test -e 
                   'ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=BookReadingEventDB;User Id=SA;Password=Naman@123;Encrypt=False' 
                    -e ASPNETCORE_ENVIRONMENT=Development bhatia0301/bookreadingevents
