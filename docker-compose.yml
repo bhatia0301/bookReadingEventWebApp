@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   bookreadingapp.web:
-    image: bhatia0301/bookreadingevents:v1
+    image: bhatia0301/bookreadingevents:v2
     build:
       context: .
       dockerfile: BookReadingWebApp/Dockerfile
