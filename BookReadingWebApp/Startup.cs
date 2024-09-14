@@ -1,14 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using BookReadingApp.Infrastructure.Data;
 using Microsoft.AspNetCore.Identity;
 using BookReadingApp.Application.Interfaces;
@@ -18,7 +14,10 @@ using FacadePattern.FacadeDP;
 using FacadePattern.FacadeFactory;
 using FacadePattern.FacadeFactoryInterface;
 using FacadePattern.FacadeInterface;
-using BookReadingApp.Application.UnitOfWork;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using System.Text.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace BookReadingWebApp
 {
@@ -34,7 +33,11 @@ namespace BookReadingWebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddHealthChecks()
+                .AddSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                      name: "SQL Server",
+                      failureStatus: HealthStatus.Unhealthy,
+                      tags: new[] { "database", "sqlserver" });
             //Add Logging As a singleton
             services.AddSingleton<ILogger>(provider =>
             {
@@ -89,7 +92,7 @@ namespace BookReadingWebApp
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
@@ -99,6 +102,23 @@ namespace BookReadingWebApp
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHealthChecks("/health", new HealthCheckOptions()
+                {
+                    ResponseWriter = async (context, report) =>
+                    {
+                        context.Response.ContentType = "application/json";
+                        var result = JsonSerializer.Serialize(new
+                        {
+                            status = report.Status.ToString(),
+                            checks = report.Entries.Select(entry => new
+                            {
+                                name = entry.Key,
+                                status = entry.Value.Status.ToString()
+                            })
+                        });
+                        await context.Response.WriteAsync(result);
+                    }
+                });
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Event}/{action=Events}/{id?}");

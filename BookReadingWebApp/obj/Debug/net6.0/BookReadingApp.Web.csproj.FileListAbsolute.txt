@@ -77,3 +77,8 @@ C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\obj\Debug\net6
 C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\obj\Debug\net6.0\BookReadingApp.Web.pdb
 C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\obj\Debug\net6.0\BookReadingApp.Web.genruntimeconfig.cache
 C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\obj\Debug\net6.0\ref\BookReadingApp.Web.dll
+C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\bin\Debug\net6.0\HealthChecks.SqlServer.dll
+C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\namanbhatia01\source\BookReadingWebApp\BookReadingWebApp\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
