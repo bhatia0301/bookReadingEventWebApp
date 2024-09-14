@@ -37,7 +37,7 @@ namespace BookReadingWebApp
                 .AddSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                       name: "SQL Server",
                       failureStatus: HealthStatus.Unhealthy,
-                      tags: new[] { "database", "sqlserver" });
+                      tags: new[] { "readiness" });
             //Add Logging As a singleton
             services.AddSingleton<ILogger>(provider =>
             {
@@ -102,21 +102,20 @@ namespace BookReadingWebApp
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapHealthChecks("/health", new HealthCheckOptions()
+                endpoints.MapHealthChecks("/health");
+
+                endpoints.MapHealthChecks("/ready", new HealthCheckOptions
                 {
+                    Predicate = (check) => check.Tags.Contains("readiness"), 
                     ResponseWriter = async (context, report) =>
                     {
-                        context.Response.ContentType = "application/json";
-                        var result = JsonSerializer.Serialize(new
-                        {
-                            status = report.Status.ToString(),
-                            checks = report.Entries.Select(entry => new
-                            {
-                                name = entry.Key,
-                                status = entry.Value.Status.ToString()
-                            })
-                        });
-                        await context.Response.WriteAsync(result);
+                        context.Response.ContentType = "text/plain";
+                        var status = report.Status == HealthStatus.Healthy ? "Healthy" : "Unhealthy";
+                        var description = report.Status == HealthStatus.Healthy
+                            ? "SQL Server is reachable."
+                            : "Unable to connect to SQL Server.";
+
+                        await context.Response.WriteAsync($"{status}\n{description}");
                     }
                 });
                 endpoints.MapControllerRoute(
